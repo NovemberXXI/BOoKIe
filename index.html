@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKIE Sign in</title>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="./index.html">
+          <h2 class="logo">BOoKIe</h2>
+        </a>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="list-link current">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link prod">Products</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link rev">Reviews</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link abt">About</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link cont">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="space1"></div>
+
+    <div class="login">
+      <!-- for buyer -->
+      <div class="buyer">
+        <h1>Buyer Sign Up</h1>
+        <input type="email" class="email" placeholder="Email" />
+        <input type="confirm-email" class="email" placeholder="Confirm Email" />
+
+        <button class="continue">Continue</button>
+      </div>
+
+      <!-- for seller -->
+      <div class="seller">
+        <h1>Seller sign up</h1>
+        <input type="email" class="email" placeholder="Admin Email" />
+        <input type="password" class="password" placeholder="Admin Password" />
+        <button class="admin-sign-in">Sign In</button>
+        <span>or</span>
+        <button class="admin-sign-in">Create Account</button>
+
+        <div id="create-acct">
+            <h1>Create an Account</h1>
+            <input class="email" type="text" placeholder="Email *"></input>
+            <input class="confirm-email-signup" type="email" placeholder="Confirm Email *"></input>
+            <input class="password" type="password" placeholder="Password *"></input>
+            <input class="confirm-password-signup" type="password" placeholder="Confirm Password *"></input>
+            <button class="create-acct-btn">Create Account</button>
+            <button class="return-btn">Return to Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="space2"></div>
+  </body>
+</html>

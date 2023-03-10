@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.logo {
+    color: inherit;
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: 800;
+    margin: 10px;
+    font-family: cursive;
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(221, 148, 69, 0.775);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+}
+
+
+/* @media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .menu.activate {
+        left: 0;
+    }
+
+} */
+
+.hero {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 60%;
+    margin: 8% auto;
+    margin-bottom: 280px;
+}
+
+
+
+.explore {
+    background-image: url(./images/general.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 45vh;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.explore:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+
+.product-ex {
+    background-image: url(./images/vip.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 22.5vh;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.product-ex-2 {
+    background-image: url(./images/suite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 22.5vh;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.product-ex:hover,
+.product-ex-2:hover {
+    transform: scale(1.04);
+    transition: 0.5s ease-in-out;
+}
+
+button {
+    width: 50%;
+    margin-top: 300px;
+    background: rgba(38, 72, 219, 0.867);
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 20px;
+    cursor: pointer;
+    transform: translateY(120px);
+}
+
+.EXPO {
+    color: black;
+    font-family: cursive;
+    font-weight: 300;
+    font-size: large;
+}
+
+.space1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 8%;
+    background: rgba(221, 148, 69, 0.775);
+    height: 75vh;
+    position: fixed;
+    top: 150px;
+    left: 72px;
+    transform: translateX(150px);
+    z-index: -1;
+}
+
+.space2 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 8%;
+    background: rgba(221, 148, 69, 0.775);
+    height: 75vh;
+    position: fixed;
+    transform: translateX(1250px);
+    bottom: 39px;
+    z-index: -1;
+}
+
+
+.ticket {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 70%;
+    margin: 5.55% auto;
+    transform: translateX(30px);
+}
+
+.ticket1 {
+    width: 500px;
+    height: 60vh;
+    background: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 20px;
+
+}
