@@ -137,6 +137,17 @@ input {
 }
 
 
+.admin-create {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    height: 4vh;
+    border: none;
+    border-radius: 8px;
+}
+
+
 .seller {
     background-image: url(./images/login.jpg);
     background-size: cover;
