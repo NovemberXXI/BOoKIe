@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOOKIE Sign in</title>
     <link rel="stylesheet" href="signin.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -48,26 +49,27 @@
       <!-- for buyer -->
       <div class="buyer">
         <h1>Buyer Sign Up</h1>
-        <input type="email" class="email" placeholder="Email" />
-        <input type="confirm-email" class="email" placeholder="Confirm Email" />
+        <input type="email" class="email buyeremail" placeholder="Email" />
+        <input type="confirm-email" class="confirm-email" placeholder="Confirm Email" />
 
-        <button class="continue">Continue</button>
+        <button class="continuebtn">Continue</button>
       </div>
 
       <!-- for seller -->
       <div class="seller">
         <h1>Seller sign up</h1>
-        <input type="email" class="email" placeholder="Admin Email" />
+        <input type="email" class="email adminemail" placeholder="Admin Email" />
         <input type="password" class="password" placeholder="Admin Password" />
         <button class="admin-sign-in">Sign In</button>
         <span>or</span>
         <button class="admin-create">Create Account</button> 
       </div>
+      <!-- create for seller -->
       <div id="create-acct">
         <h1>Create an Account</h1>
-        <input class="email" type="text" placeholder="Email *"></input>
+        <input class="email add-admin-email" type="text" placeholder="Email *"></input>
         <input class="confirm-email-signup" type="email" placeholder="Confirm Email *"></input>
-        <input class="password" type="password" placeholder="Password *"></input>
+        <input class="password create-admin-password" type="password" placeholder="Password *"></input>
         <input class="confirm-password-signup" type="password" placeholder="Confirm Password *"></input>
         <button class="create-acct-btn">Create Account</button>
         <button class="return-btn">Return to Login</button>
@@ -77,6 +79,5 @@
     <div class="space2"></div>
 
 
-    <script src="main.js"></script>
   </body>
 </html>
