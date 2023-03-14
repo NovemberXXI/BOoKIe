@@ -4,6 +4,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase
 import {
   getAuth,
   createUserWithEmailAndPassword,
+  confirmUserWithEmailAndConfirmEmail,
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -33,64 +34,49 @@ const analytics = getAnalytics(app);
 const auth = getAuth();
 // auth
 
-// buyer
-const buyer = document.getElementsByClassName("buyeremail");
-const buyerEmail = document.getElementsByClassName("email");
-const buyerEmailConfirm = document.getElementsByClassName("confirm-email");
-const continueButton = document.getElementsByClassName("continuebtn");
-
-// seller
-
-const admin = document.getElementsByClassName("seller");
-const adminEmail = document.getElementsByClassName("adminemail");
-const adminPassword = document.getElementsByClassName("password");
-const signInBtn = document.getElementsByClassName("admin-sign-in");
-const createAccBtn = document.getElementsByClassName("admin-create");
-
-// create accont
-
-const createAccont = document.getElementsById("create-acct");
-const addAdminEmail = document.getElementsByClassName("add-admin-email");
-const confirmAdminEmail = document.getElementsByClassName(
-  "confirm-email-signup"
-);
-const createPassword = document.getElementsByClassName("create-admin-password");
-const confirmPassword = document.getElementsByClassName(
-  "confirm-password-signup"
-);
-const createAcctBtn = document.getElementsByClassName("create-acct-btn");
-const returnBtn = document.getElementsByClassName("return-btn");
-
-// buyer continue to explore
-
 var email,
+  confirmEmail,
   password,
   signupEmail,
   signupPassword,
-  confirmEmail,
-  confirmCreatePassword;
+  confirmSignupEmail,
+  confirmSignUpPassword;
+// buyer
+const userLog = document.querySelector(".buyer");
+const buyerEmail = document.querySelector(".email");
+const buyerEmailConfirm = document.querySelector(".confirm-email");
+const continueButton = document.querySelector(".continuebtn");
 
-continueButton.addEventlistener("click", function () {
-  var isVerified = true;
+// seller
 
-  Email = buyerEmail.value;
-  confirmEmail = buyerEmailConfirm.value;
-  if (signupEmail != confirmSignupEmail) {
-    windown.alert("Please check email for correction");
-    isVerified = false;
-  }
+const admin = document.querySelector(".seller");
+const adminEmail = document.querySelector(".adminemail");
+const adminPassword = document.querySelector(".password");
+const signInBtn = document.querySelector(".admin-sign-in");
+const createAccBtn = document.querySelector(".admin-create");
+
+// create accont
+
+const createAccont = document.querySelector("#create-acct");
+const addAdminEmail = document.querySelector(".add-admin-email");
+const confirmAdminEmail = document.querySelector(".confirm-email-signup");
+const createPassword = document.querySelector(".create-admin-password");
+const confirmPassword = document.querySelector(".confirm-password-signup");
+const createAcctBtn = document.querySelector(".create-acct-btn");
+const returnBtn = document.querySelector(".return-btn");
+
+// buyer continue to explore
+
+continueButton.addEventListener("click", function () {
+  // email = buyerEmail.value;
+
+  // confirmEmail = buyerEmailConfirm.value;
+
+  // confirmUserWithEmailAndConfirmEmail(auth, email, confirmEmail).then(
+  //   (userCredential) => {
+  //     const user = userCredential.user;
+
+  window.location = "./main.html";
+  //   }
+  // );
 });
-
-if (isVerified) {
-  createUserWithEmailAndPassword(auth, Email, confirmEmail)
-    .then((userCredential) => {
-      window.location = "./main.html";
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-      window.alert("Error occurred. Try again.");
-      window.alert(errorMessage);
-    });
-}

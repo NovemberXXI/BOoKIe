@@ -108,6 +108,13 @@ input {
     height: 5vh;
 }
 
+.confirm-email {
+    width: 400px;
+    margin: 3% auto;
+    align-items: center;
+    height: 5vh;
+}
+
 .password {
     width: 400px;
     margin: 3% auto;
