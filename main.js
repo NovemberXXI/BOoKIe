@@ -68,15 +68,5 @@ const returnBtn = document.querySelector(".return-btn");
 // buyer continue to explore
 
 continueButton.addEventListener("click", function () {
-  // email = buyerEmail.value;
-
-  // confirmEmail = buyerEmailConfirm.value;
-
-  // confirmUserWithEmailAndConfirmEmail(auth, email, confirmEmail).then(
-  //   (userCredential) => {
-  //     const user = userCredential.user;
-
   window.location = "./main.html";
-  //   }
-  // );
 });

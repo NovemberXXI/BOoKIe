@@ -5,6 +5,11 @@
 }
 
 
+body {
+    background: rgba(216, 216, 216, 0.232);
+}
+
+
 a {
     color: inherit;
     text-decoration: none;

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.payment {
+    align-items: center;
+    justify-content: center;
+    background: rgba(216, 216, 216, 0.232);
+    width: 380px;
+    margin: 80px auto;
+    height: auto;
+    overflow: hidden;
+    padding: 35px;
+    padding-top: 60px;
+    border-radius: 6px;
+    position: relative;
+
+}
+
+h2 {
+    background: rgba(221, 148, 69, 0.775);
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+}
+
+.form .label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form .input {
+    padding: 13px 0 13px 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
+    font-size: 16px;
+}
+
+.card-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-items {
+    width: 48%;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.icon-relative {
+    position: relative;
+}
+
+.btn {
+    margin-top: 40px;
+    background: rgba(221, 148, 69, 0.775);
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}

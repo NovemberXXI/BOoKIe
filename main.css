@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background: rgba(216, 216, 216, 0.232);
+}
 
 a {
     color: inherit;

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(216, 216, 216, 0.232);
+}
+
+.cart-container {
+    width: 80%;
+    height: 60vh;
+    margin: 10% auto;
+    background: rgba(221, 148, 69, 0.775);
+    display: flex;
+    border-radius: 20px;
+}
+
+.ticket-display {
+    background-image: url(./images/general.jpg);
+    background-size: cover;
+    width: 25%;
+    height: 40vh;
+    margin: 5.5%;
+    border-radius: 20px;
+}
+
+.ticket-total {
+
+    justify-content: space-between;
+    width: 65%;
+    height: 40vh;
+    margin: 5.5%;
+    background: red;
+    border-radius: 20px;
+}
+
+.n-o-t {
+    background: green;
+    display: flex;
+    width: 60%;
+    height: 15vh;
+    margin: 5% auto;
+    border-radius: 20px;
+}
+
+.checkout {
+    display: flex;
+    width: 40%;
+    height: 8vh;
+    margin: 5% auto;
+    border-radius: 20px;
+}
+
+button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
