@@ -32,12 +32,12 @@ body {
     width: 65%;
     height: 40vh;
     margin: 5.5%;
-    background: red;
+    background: rgba(255, 255, 255, 0.393);
     border-radius: 20px;
 }
 
 .n-o-t {
-    background: green;
+    background: rgb(222, 157, 88);
     display: flex;
     width: 60%;
     height: 15vh;
@@ -57,4 +57,29 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.minus {
+    width: 20%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.display {
+    width: 20%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.add {
+    width: 20%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
 }

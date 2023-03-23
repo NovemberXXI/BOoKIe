@@ -219,13 +219,50 @@ button {
 }
 
 .ticket1 {
+    background-image: url(./images/general.jpg);
+    background-size: cover;
     width: 500px;
     height: 60vh;
-    background: blue;
+    /* background: blue; */
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 10px;
     border-radius: 20px;
 
+}
+
+.ticket2 {
+    background-image: url(./images/vip.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 60vh;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.ticket3 {
+    background-image: url(./images/suite.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+p {
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    margin: auto;
+    padding: auto;
 }
